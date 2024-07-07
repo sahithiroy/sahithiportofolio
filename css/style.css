@@ -537,6 +537,50 @@ margin-top: 30px;
    display: block;
     
 }
+/* General styles */
+.section-title, .portfolio-heading {
+   text-align: center;
+}
+
+.portfolio-item {
+   flex: 1;
+   max-width: 33%;
+   box-sizing: border-box;
+}
+
+.portfolio-item-inner {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+}
+
+.portfolio-img {
+   text-align: center;
+}
+
+.portfolio-img img {
+   width: 100%;
+   height: auto;
+}
+
+.portfolio-item-inner p {
+   padding: 15px;
+}
+
+/* Ensure equal height and width */
+.portfolio-item {
+   width: 30%;
+   margin: 1.5%;
+}
+
+.portfolio-item-inner {
+   height: 100%;
+   padding: 20px;
+   background: #fff;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .contact-title{
    color: var(--skin-color);
    text-align: center;
@@ -649,5 +693,19 @@ margin-top: 30px;
    .about .about-content .personal-info{
       flex: 0 0 100%;
       max-width: 100%;
+   }
+}
+/* Responsive design */
+@media (max-width: 768px) {
+   .portfolio-item {
+       width: 45%;
+       margin: 2.5%;
+   }
+}
+
+@media (max-width: 480px) {
+   .portfolio-item {
+       width: 100%;
+       margin: 0 0 20px 0;
    }
 }
